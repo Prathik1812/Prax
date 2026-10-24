@@ -66,15 +66,6 @@ export function Footer() {
               <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
             </a>
 
-            {/* Default Mail Client Action */}
-            <a
-              href={`mailto:${email}?subject=Project%20Inquiry%20%E2%80%94%20Prathik%20Kumar`}
-              className="w-full py-3 px-5 rounded-2xl border border-neutral-800 hover:border-neutral-600 bg-neutral-900/60 text-xs font-eurostile text-neutral-300 hover:text-white flex items-center justify-between transition-all"
-            >
-              <span>Default Mail Client</span>
-              <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
-            </a>
-
             {/* Copy Email Button */}
             <button
               onClick={handleCopy}
