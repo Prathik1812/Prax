@@ -6,7 +6,13 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Prathik Kumar — Electronics Engineer and UI/UX Designer directing attention through light, shadow, and motion.",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", type: "image/png" },
+    ],
   },
 }
 
