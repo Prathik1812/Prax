@@ -18,12 +18,12 @@ export function AboutSection() {
     },
     {
       company: "FlyRank",
-      role: "Product & Engineering Documentation Intern",
+      role: "UI/UX Design Intern",
       period: "Jul 2026 – Aug 2026",
       location: "Remote",
       description:
-        "Collaborated with product and engineering teams on technical documentation and cross-functional workflows; translated system requirements into developer-ready specifications.",
-      badge: "Internship",
+        "Designed intuitive user interfaces, responsive product flows, and design system components. Collaborated closely with engineering stakeholders to deliver polished, user-centered digital experiences.",
+      badge: "UI/UX",
     },
     {
       company: "SuPrazo Technologies",

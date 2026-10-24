@@ -110,7 +110,7 @@ export function ProjectsSection() {
     { title: "Sports Club Logo", category: "Athletic Monogram", image: "/assets/selected/sports-logo.jpg" },
     { title: "Ratan Tata Tribute", category: "Typographic Poster", image: "/assets/selected/tata-tribute.jpg" },
     { title: "Prizm Magazine Cover", category: "Print Editorial", image: "/assets/selected/prizm-cover.jpg" },
-    { title: "The Silent Cafe", category: "Hospitality Identity", image: "/assets/selected/silent-cafe.png" },
+    { title: "The Silent Cafe", category: "Landing Page", image: "/assets/selected/silent-cafe.png" },
   ]
 
   return (
