@@ -1,26 +1,109 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Rosnoc';
+  src: url('/fonts/Rosnoc.otf') format('opentype');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Eurostile';
+  src: url('/fonts/eurostile.woff2') format('woff2');
+  font-weight: 400 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: 'Eurostile', sans-serif;
+  --font-mono: 'Eurostile', monospace;
+  --font-rosnoc: 'Rosnoc', sans-serif;
+  --font-eurostile: 'Eurostile', sans-serif;
+}
+
 :root {
+  --sky-400: #38bdf8;
+  --sky-500: #0ea5e9;
+  --accent: #660033;
+  --accent-light: #880044;
+  --accent-soft: #f7e6ee;
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0a0a0a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --sky-400: #38bdf8;
+  --sky-500: #0ea5e9;
+  --accent: #660033;
+  --accent-light: #a30052;
+  --accent-soft: #240012;
+  --background: #0a0a0a;
+  --foreground: #ffffff;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Strict Typography: ONLY Rosnoc and Eurostile */
+* {
+  font-family: 'Eurostile', sans-serif;
+}
+
+.font-rosnoc, h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Rosnoc', sans-serif !important;
+  letter-spacing: 0.04em;
+}
+
+.font-eurostile, body, p, span, a, button, input, textarea, div {
+  font-family: 'Eurostile', sans-serif;
+  letter-spacing: 0.015em;
+}
+
+code, pre, kbd, samp, .font-mono {
+  font-family: 'Eurostile', monospace !important;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
+.animate-marquee {
+  animation: marquee var(--duration, 30s) linear infinite;
+}
+
+.animate-marquee-reverse {
+  animation: marquee var(--duration, 30s) linear infinite reverse;
+}
+
+/* Hide default system cursor completely on desktop as requested */
+@media (pointer: fine) {
+  *, *::before, *::after, html, body, a, button, input, [role="button"], .cursor-pointer {
+    cursor: none !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Eurostile', sans-serif;
+}
+
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Eurostile', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Rosnoc', sans-serif;
+}
+
+/* Selection color with #660033 theme */
+::selection {
+  background-color: #660033;
+  color: #ffffff;
 }
