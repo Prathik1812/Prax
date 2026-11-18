@@ -17,6 +17,15 @@ export function AboutSection() {
       badge: "Managing Editor",
     },
     {
+      company: "House of Bhansali",
+      role: "Graphic Designer Intern",
+      period: "Aug 2026 – Present",
+      location: "Hyderabad, IN / Remote",
+      description:
+        "Crafting high-impact brand collateral, editorial visuals, promotional campaigns, and luxury graphic assets aligned with brand identity and creative direction.",
+      badge: "Design",
+    },
+    {
       company: "FlyRank",
       role: "UI/UX Design Intern",
       period: "Jul 2026 – Aug 2026",
